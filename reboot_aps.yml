@@ -1,0 +1,7 @@
+---
+- name: Reiniciar APs UniFi sin Python
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Reiniciar AP
+      raw: /sbin/reboot
